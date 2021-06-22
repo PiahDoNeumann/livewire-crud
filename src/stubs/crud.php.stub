@@ -98,6 +98,7 @@ class {{ name }} extends Component
           $this->resetForm();
 
          session()->flash('message', 'Record Updated Successfully');
+         $this->showForm = false;
     }
 
     public function confirmDelete($primaryId)
